@@ -1,0 +1,63 @@
+# Database Configuration
+DATABASE_URL=sqlite:///./crypto_bot.db
+
+# JWT Settings
+SECRET_KEY=your-super-secret-key-change-in-production
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=30
+
+# Binance API Configuration
+BINANCE_API_KEY=your_binance_api_key_here
+BINANCE_SECRET_KEY=your_binance_secret_key_here
+BINANCE_TESTNET=true
+
+# Coinbase Pro API Configuration (Optional)
+COINBASE_API_KEY=your_coinbase_api_key_here
+COINBASE_SECRET_KEY=your_coinbase_secret_key_here
+COINBASE_PASSPHRASE=your_coinbase_passphrase_here
+
+# Trading Configuration
+DEFAULT_TRADING_PAIRS=["BTC/USDT", "ETH/USDT", "ADA/USDT", "DOT/USDT"]
+DEFAULT_TIMEFRAME=1h
+MAX_POSITION_SIZE=0.1
+STOP_LOSS_PERCENTAGE=0.02
+TAKE_PROFIT_PERCENTAGE=0.06
+MAX_DRAWDOWN=0.15
+
+# Strategy Parameters
+RSI_PERIOD=14
+RSI_OVERSOLD=30
+RSI_OVERBOUGHT=70
+
+MACD_FAST=12
+MACD_SLOW=26
+MACD_SIGNAL=9
+
+BOLLINGER_PERIOD=20
+BOLLINGER_STD=2.0
+
+MA_FAST=10
+MA_SLOW=50
+
+# Exchange Settings
+EXCHANGE_NAME=binance
+EXCHANGE_TESTNET=true
+
+# API Rate Limits
+MAX_REQUESTS_PER_MINUTE=60
+MAX_REQUESTS_PER_HOUR=1000
+
+# Logging
+LOG_LEVEL=INFO
+LOG_FILE=crypto_bot.log
+
+# Web Interface
+HOST=0.0.0.0
+PORT=8000
+DEBUG=true
+
+# Risk Management
+MAX_PORTFOLIO_RISK=0.02
+MAX_DAILY_LOSS=0.05
+CORRELATION_LIMIT=0.7
+VOLATILITY_ADJUSTMENT=true
